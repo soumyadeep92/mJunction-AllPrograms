@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="txt1" type="text">
+<button onfocus="validate()">Click</button>
+<button onblur="blur()">Blur</button>
+<script>
+function validate()
+{
+	var x=document.getElementById("txt1").value;
+	if(x.length==0)
+	{
+		alert("Give some input");
+	}
+	document.getElementById("txt1").focus();
+}
+function blur()
+{
+	document.getElementById("txt1").blur();
+}
+</script>
+</body>
+</html>

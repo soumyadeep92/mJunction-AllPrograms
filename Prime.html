@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter the number: <input type="number" id="num1"><br/>
+<button type="btn1" onclick="sub()">Click</button>
+<script>
+function sub()
+{
+	var n=document.getElementById("num1").value;
+	var k=n;
+	var g=2;
+	if(n==1)
+        {
+            alert("The number 1 is not prime");
+        }
+	else
+	{
+		while(k>0)
+        	{
+            		while(g<k)
+            		{
+                		if(k%g==0)
+                		{
+                    			k=0;
+                    			alert("The number "+n+" is not prime");
+                		}
+                		g++;
+            		}
+        		if(k!=0 && g==k)
+        		{
+            			alert("The number "+n+" is prime");
+				break;
+        		}
+		}
+	}
+}
+</script>
+</body>
+</html>

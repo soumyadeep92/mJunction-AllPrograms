@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.btn
+{
+	background-color:red;
+	color:white;
+	padding:16px;
+	font-size:16px;
+}
+.drop1
+{
+	position:relative;
+	display:inline-block;
+}
+.drop2
+{
+	display:none;
+	position:absolute;
+	background-color:yellow;
+}
+.drop2 a
+{
+	color:black;
+	padding:13px 16px;
+	text-decoration:none;
+	display:block;
+}
+.drop2 a:hover{background-color:green}
+.drop1:hover .drop2
+{
+	display:block;
+}
+.drop1:hover .btn
+{
+	background-color:black;
+}
+</style>
+</head>
+<body>
+<h1>Hoverable Dropdown List</h1>
+<div class="drop1">
+<button class="btn">Dropdown</button>
+<div class="drop2">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+</div>
+</div>
+</body>
+</html>
+
+

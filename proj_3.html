@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter  name: <input id="txt1" type="text"><br>
+Enter phone number: <input id="txt2" type="text"><br>
+Enter Email id: <input id="txt3" type="text"><br>
+<button type="button" onclick="sub()">Click</button>
+<script>
+function sub()
+{
+	var x=document.getElementById("txt1").value;
+	var y=document.getElementById("txt2").value;
+	var z=document.getElementById("txt3").value;
+	var a=z.indexOf("@");
+	var b=z.lastIndexOf(".");
+	if(x.length==0)
+	{
+		alert("Entering name is required");
+	}
+	if(y.length<12 || Number.isInteger(y)!=true)
+	{
+		alert("Enter valid phone number");
+	}
+	if(a<1 || b<a+2 || b+2>=z.length)
+	{
+		alert("Enter valid email");
+		return false;	
+	}
+}
+</script>
+</body>
+</html>

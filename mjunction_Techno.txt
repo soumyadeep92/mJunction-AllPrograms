@@ -1,0 +1,328 @@
+html-Hypertext Markup Language
+Why HTML is called Markup Language?
+HTML is called markup language because it is
+a language that allows users to organize,
+improve the appearance of and link text with
+data on the internet. 
+!Doctype html denotes that this is html5 
+version
+What is HTML element?
+The contents within start tag and end tag 
+including data.
+In HTML headings are of 6 types. h1,h2....h6.
+HTML attribute: provides additional 
+informaion about HTML elements.
+href:hyperlink reference
+The a tag defines a hyperlink.
+Which tags are empty tags?
+<br>,<img>
+CSS:Cascading Stylesheet
+Types of CSS:Internal,Inline,External
+Internal and External:head tag
+Inline:body tag
+
+Inline CSS:
+<body>
+<p style="background-color:red;">This is a paragraph</p>
+<p style="color:red;"><i>This</i> is <u>a <b>paragraph</b></u></p>
+<p style="font-size:50px; color:red;"><i>This</i> is <u>a <b>paragraph</b></u></p>
+<img src="sourav.jpg" style="width:100px;">
+<img src="sourav.jpg" style="width:100%;">
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+Username: <input type="text"><br/>
+Password: <input type="text"><br/>
+<button type="button">Submit</botton>
+</body>
+</html>
+
+id is unique while class can be same. id is denoted by # and class is denoted by .
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.a1
+{
+	background-color:yellow;
+}
+#a4
+{
+	background-color:red;
+}
+#a5
+{
+	background-color:pink;
+}
+#a6
+{
+	background-color:blue;
+}
+</style
+</head>
+<body>
+<form>
+<p class="a1">Avilash</p>
+<p class="a1">Dasgupta</p>
+<p class="a1">Techno India</p>
+<p id="a4">Avilash</p>
+<p id="a5">Dasgupta</p>
+<p id="a6">Techno India</p>
+</form>
+</body>
+</html>
+
+
+
+
+<style>
+a:link
+{
+	color:red;
+}
+a:active
+{
+	color:blue;
+}
+a:hover
+{
+	color:green;
+}
+a:visited
+{
+	color:skyblue;
+}
+</style>
+
+
+
+<style>
+#img1
+{
+	opacity:0.5;
+}
+</style>
+
+
+
+CSS position: There are five different position values. static, relative, fixed, absolute, sticky
+
+
+
+<body>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#News">News</a></li>
+</body>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn
+{
+	background-color:red;
+	color:white;
+	padding:16px;
+	font-size:16px;
+	border:none;
+	cursor:pointer;
+}
+.dropdown
+{
+	position:relative;
+	display:inline-block;
+}
+.dropdown-content
+{
+	display:none;
+	position:absolute;
+	background-color:yellow;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;	
+}
+.dropdown-content a
+{
+	color:black;
+	padding:13px 16px;
+	text-decoration:none;
+	display:block;
+}
+.dropdown-content a:hover{background-color:green}
+.dropdown:hover .dropdown-content
+{
+	display:block;
+}
+.dropdown:hover .dropbtn
+{
+	background-color:black;
+}
+</style>
+</head>
+<body>
+<h1>Dropdown List</h1>
+<div class="dropdown">
+<button class="dropbtn">Dropdown</button>
+<div class="dropdown-content">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+document.write("Soumya Deep");
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+document.write("Soumya Deep");
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+window.alert("Soumya Deep");
+</script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+console.log(22);
+</script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p id="p1">Deep</p>
+<script>
+document.getElementById("p1").innerHTML="Soumya";
+</script>
+</body>
+</html>
+
+
+
+onclick=document.getElemenById('demo').src="rahul.jpg"
+
+
+
+
+function av()
+{
+	var x=document.getElementById("demo").value;
+	var a=x.indexOf("@");
+	var b=x.lastIndexOf(".");
+	if(a<1 || b<a+2 || b+2>=x.length)
+	{
+		alert("Enter valid email id");
+		return false;
+	}
+}
+
+
+
+var x=document.getElementById("demo").value;
+var a,b,sum=0;
+b=x;
+while(x>0)
+{
+a=x%10;
+x=parseInt(x/10)
+sum=sum*10+a;
+}  
+if(sum==b)
+{
+alert("Palindrome");
+}
+else
+{
+alert("not palindrome");
+}
+
+
+function fibonacci()
+{
+	var n=document.getElementById("demo").value;
+	var n1=0,n2=1,next,i;
+	for(i=1;i<=n;i++)
+	{
+		document.write(n1);
+		next=n1+n2;
+		n1=n2;
+		n2=next;
+	}
+}
+
+
+PHP Hypertext Preprocessor
+Personal Home Page -> PHP previous name
+difference between echo and print 
+echo is faster than print
+echo has no return values but print has return value of 1
+echo can take multiple parameters but print can take only one argument
+
+
+GET & POST difference:
+1. Get-not secured Post-secured
+2. Get-sent through url  Post- not passed through url
+
+Difference between include and require:-
+include and require statements are identical, but the main difference is that require will produce a fatal error and stop the script but include will only produce a warning and the script will continue.

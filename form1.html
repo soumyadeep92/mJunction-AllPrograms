@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter phone number: <input id="txt2" type="text" placeholder="Phone number"><br/>
+Enter Email ID: <input id="txt3" type="text" placeholder="Email ID"><br/>
+<button onclick="sub()">Click</button>
+<script>
+function sub()
+{
+	var phone=document.getElementById("txt2").value;
+	var email=document.getElementById("txt3").value;
+	var rate=email.indexOf("@");
+	var b=email.lastIndexOf(".");
+	if(phone.length!=10)
+	{
+		alert("Phone number should have only 10 digits");
+	}
+	if(email.length==0 || rate<1 || b<rate+2 || b+2>=email.length)
+	{
+		alert("Enter valid email");
+	}
+}
+</script>
+</body>
+</html>

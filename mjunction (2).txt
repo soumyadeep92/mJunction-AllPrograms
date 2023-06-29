@@ -1,0 +1,14 @@
+var big;
+big=(a>b)?((a>c)?a:c):((b>c)?b:c)
+alert("The largest number:  "+big);
+
+<?php
+define("GREETING","Have a good day.",false);
+echo greeting;
+?>
+
+XAMPP Apache + MariaDB + PHP + Perl
+
+sql connection with php::--
+mysqli,i stands for improved extension->object oriented,procedural,pdo->php data object
+

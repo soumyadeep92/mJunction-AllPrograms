@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="num1" type="number">
+<input id="num2" type="number">
+<button onclick="swap()">Click</button>
+<script>
+function swap()
+{
+	var x=document.getElementById("num1").value;
+	var y=document.getElementById("num2").value;	
+	var z=x;
+	x=y;
+	y=z;
+	document.getElementById("num1").value=x;
+	document.getElementById("num2").value=y;	
+}
+</script>
+</body>
+</html>

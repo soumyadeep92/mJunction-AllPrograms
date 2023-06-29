@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter the number: <input type="number" id="num1">
+<button onclick="sub()">Click</button>
+<script>
+function sub()
+{
+	var x=document.getElementById("num1").value;
+	var i=0;
+	var fact=1;
+	for(i=1;i<=x;i+=1)
+	{
+		fact=fact*i	
+	}
+	alert("The factorial of "+x+" is "+fact);
+}
+</script>
+</body>
+</html>

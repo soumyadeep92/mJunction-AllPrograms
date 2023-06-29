@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter the number: <input id="txt1" type="text"><br>
+<button type="button" onclick="sub()">Click</button>
+<script>
+function sub()
+{
+	var x=document.getElementById("txt1").value;
+	var b=parseInt(x);
+	var a=0;
+	var sum=0;
+	while(b>0)
+	{
+		a=b%10;
+		b=parseInt(b/10);
+		sum=sum+(a*a*a);	
+	}
+	if(sum==parseInt(x))
+	{
+		alert("Armstrong number detected");
+	}
+	else
+	{
+		alert("Not an armstrong number");
+	}
+}
+</script>
+</body>
+</html>

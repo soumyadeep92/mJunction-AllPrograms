@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.b1
+{
+	background-image:url("flower.jpeg");
+	background-size:500px 500px;
+	background-repeat:no-repeat;
+}
+.p1
+{
+	margin-top:150px;
+	margin-right:200px;
+	font-size:50px;
+	color:white;
+	margin-bottom:-10px;
+}
+.img1
+{
+	width:80px;
+	height:50px;
+}
+.p4,.p5
+{
+	color:white;
+}
+.p3
+{
+	color:white;
+}
+.p2
+{
+	color:white;
+	margin-bottom:35px;
+}
+.fa-facebook {
+                  background: #3B5998;
+                  color: white;
+	border-radius:30px;
+	height:10px;
+	padding:5px 5px 25px 5px;
+	width:40px;
+}
+.fa-twitter {
+                  background: #55ACEE;
+                  color: white;
+	border-radius:30px;
+	height:10px;
+	padding:5px 5px 25px 5px;
+	width:40px;
+}
+.div1
+{
+	float:right;
+	position:relative;
+	bottom:300px;
+	right:400px;	
+}
+
+#btn1
+{
+	background-color:lightgreen;
+	border-radius:50px;
+	width:150px;
+}
+.p6
+{
+	color:white;
+}
+.pw
+{
+	font-size:50px;
+	margin-bottom:-20px;
+}
+.div2
+{
+	position:relative;
+	float:right;
+	margin-top:-50px;
+}
+.po
+{
+	margin-left: 19px;
+	display: block;
+	position: relative;
+	margin-top: -19px; 
+	font-size:15px;
+}
+</style>
+</head>
+<body class="b1">
+<p class="p1">HELLO <br/>WORLD!</p>
+<p class="p2">Epsum factorial non deposit quid pro quo hic escorol. Olypian <br/>quarrels et gorilla congolium.</p>
+<p class="p3">Login with social media</p>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<div class="div1">
+<p class="pw">Login</p><br>
+<p class="pw1">Don't have an account? <a href="#">Create your account, </a>it takes<br>less than a minute<p><br>
+<input id="txt1"  type="text" placeholder="User name"><br><br>
+<input id="txt2" type="text"  placeholder="Password"><br><br>
+<input id="myinput" type="checkbox"><label for="myinput" class="po">Remember Me</label>
+<div class="div2">
+<p id="lp">Forgot password?</p>
+<button id="btn1" onclick="sub()"><p class="p6">Login</p></button></div>
+</div>
+<script>
+function sub()
+{
+	var user=document.getElementById("txt1").value;
+	var pass=document.getElementById("txt2").value;
+	if(user=="" || user.length==0)
+	{
+		alert("Please enter username!");
+	}
+	if(pass=="" || pass.length<8)
+	{
+		alert("Password should be more than 8 digits.");
+	}
+}
+</script>
+</body>
+</html>

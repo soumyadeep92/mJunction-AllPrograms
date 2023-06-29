@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter name: <input id="txt1" type="text" placeholder="Name"/><br/>
+Enter phone number: <input id="txt2" type="text" placeholder="Phone number"><br/>
+Enter Email ID: <input id="txt3" type="text" placeholder="Email ID"><br/>
+Enter address: <textarea></textarea>
+<button onclick="sub()">Click</button>
+<script>
+function sub()
+{
+	var name=document.getElementById("txt1").value;
+	var phone=document.getElementById("txt2").value;
+	var email=document.getElementById("txt3").value;
+	var rate=email.indexOf("@");
+	if(name.length==0)
+	{
+		alert("Name field is empty");
+	}
+	if(phone.length>10)
+	{
+		alert("Phone number should not have more than 10 digits");
+	}
+	if(email.length==0 || rate<1)
+	{
+		alert("Enter valid email");
+	}
+}
+</script>
+</body>
+</html>

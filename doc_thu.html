@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.drop1 {
+  overflow:hidden;
+  background-color:green;
+}
+.drop1 a {
+  float:left;
+  padding:14px 16px;
+  color:black
+}
+.drop2 {
+  float:left;
+  overflow:hidden;
+}
+.drop2 .btn1 {
+   color:black;
+   padding:14px 16px;
+}
+.drop1 a:hover, .drop2:hover .btn1 {
+  background-color:yellow;
+}
+.drop3 {
+  display:none;
+  position:absolute;
+  background-color:skyblue;
+}
+.drop3 a {
+  float:none;
+  color:black;
+  display:block;
+}
+.drop3 a:hover {
+  background-color:blue;
+}
+.drop2:hover .drop3 {
+  display:block;
+}
+</style>
+</head>
+<body>
+<div class="drop1">
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<div class="drop2">
+<button class="btn1">Contact 
+</button>
+<div class="drop3">
+<a href="#">Contact 1</a>
+<a href="#">Contact 2</a>
+<a href="#">Contact 3</a>
+</div>
+</div> 
+</div>
+</body>
+</html>

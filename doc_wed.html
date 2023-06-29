@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+First: <input id="t1" type="text"><br/>
+Second: <input id="t2" type="text"><br/>
+Result: <input id="t3" type="text"><br/>
+<button type="button" onclick="mult()">Click</button>
+<script>
+function mult()
+{
+	x=parseInt(document.getElementById("t1").value);
+	y=parseInt(document.getElementById("t2").value);
+	z=x*y;
+	document.getElementById("t3").value=z;
+}
+</script>
+</body>
+</html>
